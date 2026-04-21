@@ -1,4 +1,4 @@
-# 🛒 Falabella Automation - Screenplay Pattern
+# Falabella Automation 
 
 Este proyecto es un framework de automatización de pruebas de interfaz de usuario (UI) para la plataforma de E-commerce **Falabella.com**, desarrollado con **Java**, **Serenity BDD** y el patrón de diseño **Screenplay**.
 
@@ -10,7 +10,7 @@ Este proyecto es un framework de automatización de pruebas de interfaz de usuar
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 * **Lenguaje:** Java 17+
 * **Framework de Automatización:** Serenity BDD
@@ -19,6 +19,16 @@ Este proyecto es un framework de automatización de pruebas de interfaz de usuar
 * **Driver:** Selenium WebDriver (Chrome)
 
 ---
+## Alcance de las Pruebas
+
+El objetivo de esta  pruebas es validar el flujo de búsqueda y navegación en el portal Falabella.com 
+
+escenarios:
+
+* **Búsqueda Exitosa:** Validación de la capacidad del motor de búsqueda para retornar resultados relevantes ante términos válidos.
+* **Navegación al Detalle:** Verificación de que el sistema permite transicionar correctamente desde la lista de resultados hacia la ficha técnica de un producto específico.
+
+* **Búsqueda sin Resultados:** Validación del manejo de excepciones cuando el usuario ingresa términos inexistentes o caracteres especiales, asegurando que el sistema responda con el mensaje informativo correcto: *"Lo sentimos, no encontramos resultados"*.
 
 ## Estructura del Proyecto
 
