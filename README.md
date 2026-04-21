@@ -34,7 +34,7 @@ escenarios:
 El proyecto sigue la estructura estándar de Screenplay dentro de `src/test/java/com/bootcamp/screenplay`:
 
 * **features:** Archivos `.feature` con los escenarios en Gherkin.
-* **stepdefinitions:** Clases que mapean los pasos de Gherkin .
+* **stepdefinitions:** Se encarga de capturar los parámetros de entrada y delegar la ejecución de tareas al Actor, asegurando una separación clara entre el 'qué' se prueba y el 'cómo' se ejecuta. .
 * **tasks:** Acciones  realizadas por el actor (ej: `BuscarProducto`).
 * **pages:** Mapeo de localizadores y elementos de la web.
 * **questions:** Validaciones y aserciones de la prueba.
