@@ -3,6 +3,7 @@ package com.bootcamp.screenplay.stepdefinitions;
 import com.bootcamp.screenplay.pages.FalabellaDetailPage;
 import com.bootcamp.screenplay.pages.FalabellaSearchPage;
 import com.bootcamp.screenplay.questions.PaginaCargada;
+import com.bootcamp.screenplay.questions.ResultadoDeBusqueda;
 import com.bootcamp.screenplay.tasks.BuscarProducto;
 import com.bootcamp.screenplay.tasks.OpenFalabellaHome;
 import com.bootcamp.screenplay.tasks.SeleccionarProducto;
@@ -21,6 +22,7 @@ import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is; // Mejor usar is()
 
 public class OpenFalabellaSteps {
@@ -59,6 +61,13 @@ public class OpenFalabellaSteps {
     public void validarDetalle() {
         OnStage.theActorInTheSpotlight().should(
                 seeThat(WebElementQuestion.the(FalabellaDetailPage.BTN_AGREGAR_CARRITO), isVisible())
+        );
+    }
+
+    @Entonces("debería ver el mensaje {string}")
+    public void validarMensajeError(String mensajeEsperado) {
+        OnStage.theActorInTheSpotlight().should(
+                seeThat(ResultadoDeBusqueda.texto(), containsString(mensajeEsperado))
         );
     }
 }
