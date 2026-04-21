@@ -27,18 +27,17 @@ escenarios:
 
 * **Búsqueda Exitosa:** Validación de la capacidad del motor de búsqueda para retornar resultados relevantes ante términos válidos.
 * **Navegación al Detalle:** Verificación de que el sistema permite transicionar correctamente desde la lista de resultados hacia la ficha técnica de un producto específico.
-
-* **Búsqueda sin Resultados:** Validación del manejo de excepciones cuando el usuario ingresa términos inexistentes o caracteres especiales, asegurando que el sistema responda con el mensaje informativo correcto: *"Lo sentimos, no encontramos resultados"*.
+* **Búsqueda sin Resultados:** Validación del manejo de excepciones cuando el usuario ingresa un producto inexistente o caracteres especiales, asegurando que el sistema responda con el mensaje informativo correcto: *"Lo sentimos, no encontramos resultados"*.
 
 ## Estructura del Proyecto
 
 El proyecto sigue la estructura estándar de Screenplay dentro de `src/test/java/com/bootcamp/screenplay`:
 
 * **features:** Archivos `.feature` con los escenarios en Gherkin.
-* **stepdefinitions:** Clases que mapean los pasos de Gherkin a código Java.
-* **tasks:** Acciones de alto nivel realizadas por el actor (ej: `BuscarProducto`).
-* **pages:** Repositorio de localizadores (Targets) y elementos web.
-* **questions:** (En progreso) Validaciones y aserciones de la prueba.
+* **stepdefinitions:** Clases que mapean los pasos de Gherkin .
+* **tasks:** Acciones  realizadas por el actor (ej: `BuscarProducto`).
+* **pages:** Mapeo de localizadores y elementos de la web.
+* **questions:** Validaciones y aserciones de la prueba.
 
 ---
 
